@@ -15,22 +15,7 @@ export class AppService {
       const CLIENT_ID: string = 'z73CVZ80v0SYgrwfwbfz';
       const CLIENT_SECRET: string = 'dFoN8oBtKB';
       const apiUrl: string = 'https://openapi.naver.com/v1/search/' + type;
-
-      /*
-      const url: string = '';
-      const resp = await fetch(url, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'X-Naver-Client-Id': CLIENT_ID,
-            'X-Naver-Client-Secret': CLIENT_SECRET
-          },
-          body: keyword
-      });
-      const respBody = resp.json();
-
-      console.log(respBody);
-      */
+      
       return new Promise<HttpResp>((resolve, reject) => {
           request.get({
               headers: {
