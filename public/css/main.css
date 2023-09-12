@@ -4,10 +4,10 @@
   font-family: 'Nanum Square';
   font-style: normal;
   font-weight: 400;
-  src: url(fonts/NanumSquareR.eot?#iefix) format('embedded-opentype'),
-       url(fonts/NanumSquareR.woff2) format('woff2'),
-       url(fonts/NanumSquareR.woff) format('woff'),
-       url(fonts/NanumSquareR.ttf) format('truetype');
+  src: url(../fonts/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/NanumSquareR.woff2) format('woff2'),
+       url(../fonts/NanumSquareR.woff) format('woff'),
+       url(../fonts/NanumSquareR.ttf) format('truetype');
   unicode-range:U+0041-005A,U+0061-007A,U+0030-0039,U+AC00-CCCB,U+CCCD-D7A3;
 }
 
@@ -23,9 +23,25 @@ a:link, a:hover{text-decoration:none;}
 .page{width:100%;margin:0;}
 
 /* searchBar */
-.searchBar{width:100%;height:50px;border-bottom:2px solid #cc3300;box-shadow:0 0 0.5em rgba(1, 1, 1, 0.3);
-    background-color:#FFF;}
+.searchBar{width:100%;border-bottom:2px solid #10ce72;box-shadow:0 0 0.5em rgba(1, 1, 1, 0.3);
+    background-color:#FFF;position:fixed;top:0px;}
 .searchBar span:first-child{width:calc(100% - 50px);display:inline-block;text-align:center;}
-.searchBar .keyword{width:90%;border:1px solid #CCC;margin:8px;font-size:1.3em;border-radius:5px;
+.searchBar .keyword{width:90%;border:1px solid #CCC;margin:12px;font-size:1.3em;border-radius:5px;
     box-shadow:0 0 0.2em rgba(1, 0, 0, 0.2) inset;padding:5px;}
 .searchBar span:last-child{width:50px;display:inline-block;}
+.searchBar .btnSearch{width:40px;background:url(../image/ico_search.png) no-repeat center center;
+  display:inline-block;height:40px;background-size:35px;vertical-align:middle;
+  background-color:#10ce72;border-radius:5px;margin-top:-8px;}
+
+/* contents */
+.contents{width:100%;margin-top:70px;}
+.contents .listview{width:100%;}
+.contents .listview li{padding:7px 10px;text-align:center;border-bottom:1px solid #CCC;}
+.contents .listview li.nodata{display:inline-block;padding:15px 0px;width:100%;}
+
+/* tabBar */
+.tabBar{width:calc(100% - 20px);padding:10px;position:fixed;bottom:0px;}
+.tabBar div{width:calc(50% - 7px);float:left;border:1px solid #10ce72;padding:15px 0px;
+  font-size:1.2em;text-align:center;border-radius:5px;color:#10ce72;}
+.tabBar div:last-child{float:right;}
+.tabBar div.on{background-color:#10ce72;color:#FFF;}
