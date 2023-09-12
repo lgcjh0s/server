@@ -42,6 +42,7 @@ export class AppService {
                   httpResp.setMessage('Success');
                   httpResp.setData(respData);
               } else {
+                  console.log(error);
                   httpResp.setCode('99');
                   httpResp.setMessage('Failed');
                   httpResp.setData(null);
