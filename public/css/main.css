@@ -40,7 +40,7 @@ a:link, a:hover{text-decoration:none;}
 .contents .listview li.nodata{display:inline-block;padding:15px 0px;width:100%;}
 
 /* tabBar */
-.tabBar{width:calc(100% - 20px);padding:10px;position:fixed;bottom:0px;}
+.tabBar{width:calc(100% - 20px);padding:10px;position:fixed;bottom:0px;background-color:#FFF;}
 .tabBar div{width:calc(50% - 7px);float:left;border:1px solid #10ce72;padding:15px 0px;
   font-size:1.2em;text-align:center;border-radius:5px;color:#10ce72;}
 .tabBar div:last-child{float:right;}
@@ -60,3 +60,9 @@ a:link, a:hover{text-decoration:none;}
 .alertButtons{text-align:center;position:absolute;left:calc(50% - 20px);bottom:-20px;}
 .alertClose{width:40px;height:40px;border:1px solid #8a8169;border-radius:25px;background:url(../image/ico_close_black.png) no-repeat center center;
   background-color:#FFF;background-size:20px;}
+
+/* NewsRow */
+.newsRow{width:calc(100% - 20px);padding:10px;}
+.newsRow span{display:inline-block;width:100%;text-align:left;}
+.newsRow span.title{font-size:1.1em;color:#000;font-weight:700;}
+.newsRow span.date{font-size:0.7em;color:#999;}

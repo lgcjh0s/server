@@ -1,21 +1,21 @@
 import { INewsData, IBookData } from "../type/apidata.interface";
 
 class HttpResp {
-    private code: string;
-    private message: string;
+    private statusCode: number;
+    private statusMessage: string;
     private data: RespData | null = null;
 
-    constructor (code: string = '00', message: string = 'Success') {
-        this.code = code;
-        this.message = message;
+    constructor (statusCode: number = 200, statusMessage: string = 'Success') {
+        this.statusCode = statusCode;
+        this.statusMessage = statusMessage;
     }
 
-    public setCode = (code: string): void => {
-        this.code = code;
+    public setCode = (statusCode: number): void => {
+        this.statusCode = statusCode;
     }
 
-    public setMessage = (message: string): void => {
-        this.message = message;
+    public setMessage = (statusMessage: string): void => {
+        this.statusMessage = statusMessage;
     }
 
     public setData = (data: RespData | null): void => {

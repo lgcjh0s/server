@@ -15,7 +15,7 @@ export class AppService {
       const CLIENT_ID: string = 'z73CVZ80v0SYgrwfwbfz';
       const CLIENT_SECRET: string = 'dFoN8oBtKB';
       const apiUrl: string = 'https://openapi.naver.com/v1/search/' + type;
-      
+
       return new Promise<HttpResp>((resolve, reject) => {
           request.get({
               headers: {
@@ -38,12 +38,12 @@ export class AppService {
                   respData.setTotal(body.total);
                   respData.setItems(body.items);
 
-                  httpResp.setCode('00');
+                  httpResp.setCode(200);
                   httpResp.setMessage('Success');
                   httpResp.setData(respData);
               } else {
                   console.log(error);
-                  httpResp.setCode('99');
+                  httpResp.setCode(99);
                   httpResp.setMessage('Failed');
                   httpResp.setData(null);
               }
