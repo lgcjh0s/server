@@ -65,4 +65,7 @@ a:link, a:hover{text-decoration:none;}
 .newsRow{width:calc(100% - 20px);padding:10px;}
 .newsRow span{display:inline-block;width:100%;text-align:left;}
 .newsRow span.title{font-size:1.1em;color:#000;font-weight:700;}
+.newsRow span.title.ellipsis{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:inline-block;width:100%;}
 .newsRow span.date{font-size:0.7em;color:#999;}
+.newsRow span.desc.ellipsis{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:inline-block;width:100%;}
+
