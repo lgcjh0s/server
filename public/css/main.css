@@ -90,9 +90,15 @@ a:link, a:hover{text-decoration:none;}
 .popDialog.on{transform:translate(0, 0);}
 .popDialog .btnClose{position:absolute;top:15px;right:15px;width:40px;height:40px;
   background:url(../image/btn_close.png) no-repeat center center; background-size:50px auto;}
-.popHead{font-size:1.1em;font-weight:700;padding:25px 0px 20px 20px;}
-.popBody{overflow-y:auto;padding:0px 20px;width:calc(100% - 40px);min-height:300px;}
+.popHead{font-size:1.1em;font-weight:700;padding:55px 0px 20px 20px;}
+.popHead span{display:inline-block;width:calc(100% - 40px);}
+.popBody{overflow-y:auto;padding:0px 20px;width:calc(100% - 40px);min-height:300px;max-height:500px;}
+.popBody span{display:inline-block;text-align:justify;line-height:1.3em;width:100%;}
+.popBody span.attach{font-size:0.9em;color:#999;padding:10px 0px;}
+.popBody span.additional{font-size: 0.9em;padding-bottom:10px;}
+.popBody span.thumb{text-align:center;}
+.popBody span.thumb img{width:130px;margin:10px 0px;}
 .popButtons{padding:20px;width:calc(100% - 40px);}
 .popButtons .btnLink{display:inline-block;width:100%;background-color:#1994da;color:#FFF;
-  border-radius:5px;padding:12px 0px;font-size:1.2em;}
+  border-radius:5px;padding:12px 0px;font-size:1.2em;text-align:center;}
 
